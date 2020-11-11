@@ -1,0 +1,113 @@
+
+h2 {
+	color: #fff;
+}
+
+#Guestbook-header {
+	margin-bottom: 50px;
+}
+
+#Guestbook-header h1 {
+	padding-bottom: 10px;
+}
+
+#Guestbook-header p {
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+.commentsbox {
+	display: block;
+	padding: 0px;
+	padding-bottom: 250px;
+}
+
+.commentsbox table .commentrow {
+	position: relative;
+	padding: 10px;
+	background-color: #411817;
+	color: #fff;
+	min-height: 100px;
+	overflow: hidden;
+}
+
+.commentsbox table .commentheader {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	display: block;
+
+	padding: 10px 10px; 
+	margin: 0px;
+
+	border-bottom: 2px solid #541f1e;
+	box-sizing: border-box;
+}
+
+.commentsbox table .commentheader > td {
+	padding: 0 5px;
+	float: left;
+}
+
+.commentsbox table .commentheader td:not(:first-child) {
+	float: right;
+}
+
+
+.commentsbox table .commentheader {
+	position: relative;
+	background-color: #672624;
+	color: black;
+}
+
+#postForm {
+	margin-bottom: 50px;
+}
+
+
+
+input[type=text], textarea {
+	border: none;
+	border-bottom: 5px solid #82312F;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+	background-color: transparent;
+	width: 100%;
+	height: 40px;
+	font-family: Verdana;
+	font-size: 20px;
+	color: white;
+	overflow: hidden; 
+	margin-top: 10px;
+	resize: none;
+}
+
+input[type=text]::placeholder {
+	color: #999;
+}
+
+input[type=text]:focus {
+	outline: none;
+}
+
+input[type=submit] {
+	border: none;
+	border-bottom: 5px solid #82312F;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+	background: url(../Bilder/pattern2.jpg);
+	color: white;
+	font-size: 20px;
+	margin-top: 10px;
+	width: 100%;
+	height: 60px;
+}
+
+input[type=submit]:hover {
+	background: url(../Bilder/pattern.jpg);
+}
+
+input[type=submit]:focus {
+	outline: none;
+}

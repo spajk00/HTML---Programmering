@@ -1,0 +1,88 @@
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Bootstrap</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/Footer.css">
+		<link rel="stylesheet" href="css/Header.css">
+        <link rel="stylesheet" href="css/ShowerStyle.css">
+        <link rel="stylesheet" href="css/carousel.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        
+        
+
+	</head>
+	<body>
+		
+		<div class="container-fluid wrapper">
+
+			<!-- Header -->
+			<div class="header-nav" id="topnav">
+				<a href="Guestbook.php">Gästbok</a>
+				<a href="kontakt.html">Kontakta oss</a>
+				<a href="Shower.html" class="active">Shower</a>
+				<a href="index.php">Startsida</a>
+				<a href="javascript:void(0);" class="icon" onclick="navbarMenuToggle()">&#9776;</a>
+				<a href="index.html" id="logo"><img class="img-responsive img-fluid" src="Bilder/Logo.png"></a>
+			</div>
+
+			<div class="carousel">
+ 			<figure>
+ 			  <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+              <img src="Bilder\en_midsommarnattsdrom.jpg" alt="">
+    		</figure>
+    <nav>
+        <button class="nav prev">Prev</button>
+        <button class="nav next">Next</button>
+    </nav>
+</div>
+
+			<!-- Footer -->
+			<div class="col-md-12 col-sm-12 footer" style="padding: 0;">
+				<!-- Footer text -->
+				<div class="col-md-12 col-sm-12 footer-block" style="padding: 0;">
+                    <p>&copy; 2017 Universal Teatern. All rights reserved | Universal Teatern<i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+                </div>
+                <div class="col-md-12 col-sm-12 sponsors">
+                	<ul>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                	</ul>
+                </div>
+			</div>
+
+		</div>
+
+		<div id="fb-root"></div>
+		<script src="js/carousel.js"></script>
+		<script>
+			function navbarMenuToggle() {
+		    	var x = document.getElementById("topnav");
+		    	if (x.className === "header-nav") {
+		        	x.className += " responsive";
+		    	} else {
+		     	   x.className = "header-nav";
+		    	}
+			}
+		</script>
+	</body>
+</html>

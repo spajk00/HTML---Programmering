@@ -1,0 +1,93 @@
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Bootstrap</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/kontaktStyle.css">
+		<link rel="stylesheet" href="css/Footer.css">
+		<link rel="stylesheet" href="css/Header.css">
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/Javascript.js"></script>
+
+	</head>
+	<body>
+		
+		<div class="container-fluid wrapper">
+
+			<!-- Header -->
+			<div class="header-nav" id="topnav">
+				<a href="Guestbook.php">Gästbok</a>
+				<a href="kontakt.html" class="active">Kontakta oss</a>
+				<a href="Shower.html">Shower</a>
+				<a href="index.php">Startsida</a>
+				<a href="javascript:void(0);" class="icon" onclick="navbarMenuToggle()">&#9776;</a>
+				<a href="index.html" id="logo"><img class="img-responsive img-fluid" src="Bilder/Logo.png"></a>
+			</div>
+            
+            <div class="main-content">
+                <div id="banna" class="col-xs-12 col-md-8 col-md-offset-2">
+                	<h2>Kontakta oss</h2>
+                	<p>lorem lorem lorem lorem lorem lorem lorem</p>
+                	<div id="inputs" class="col-md-12 col-xs-12">
+                		<div id="nameInput" class="col-md-5">
+                			<input type="text" name="Name" placeholder="Namn">
+                		</div>
+                		<div id="emailInput" class="col-md-6 col-md-offset-1 col-xs-12">
+                			<input type="text" name="Email" placeholder="Email">
+                		</div>
+                		<div id="messageInput" class="col-md-9 col-xs-12">
+                			<textarea name="Message" placeholder="Meddelande" maxlength="200"></textarea>
+                		</div>
+                		<div id="submitButton" class="col-md-2 col-md-offset-1">
+                			<input type="submit" name="Skicka">
+                		</div>
+                	</div>
+
+                </div>
+            </div>
+
+
+            
+            <!-- Footer -->
+			<div class="col-md-12 col-sm-12 footer" style="padding: 0;">
+				<!-- Footer text -->
+				<div class="col-md-12 col-sm-12 footer-block" style="padding: 0;">
+                    <p>&copy; 2017 Universal Teatern. All rights reserved | Universal Teatern<i class="fa fa-facebook-square" aria-hidden="true"></i></p>
+                </div>
+                <div class="col-md-12 col-sm-12 sponsors">
+                	<ul>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                		<li><a href=""><img src="bilder/Facebook.png"></a></li>
+                	</ul>
+                </div>
+			</div>
+
+		</div>
+
+		<script>
+			function navbarMenuToggle() {
+		    	var x = document.getElementById("topnav");
+		    	if (x.className === "header-nav") {
+		        	x.className += " responsive";
+		    	} else {
+		     	   x.className = "header-nav";
+		    	}
+			}
+
+
+		</script>
+	</body>
+</html>

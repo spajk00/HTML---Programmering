@@ -1,0 +1,109 @@
+.header-nav {
+    background: url(../Bilder/pattern.jpg);
+    overflow: hidden;
+}
+
+.header-nav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header-nav a:hover {
+    background-color: #382323;
+    color: #ffa500;
+    opacity: 0.8;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+    opacity: 0.8;
+}
+
+.header-nav .active:hover {
+    background-color: #3c8c40;
+    color: black;
+}
+
+.header-nav #logo {
+    float: left;
+    padding: 0 15px;
+}
+
+.header-nav #logo img {
+    height: 84px;
+    width: 85px;
+}
+
+.header-nav .icon {
+    display: none;
+}
+
+
+/* Styling for mobile */
+
+@media only screen and (max-device-width: 600px){
+
+    .header-nav a {display: none;}
+
+    .header-nav .active {display: block;}
+
+    .header-nav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .header-nav a#logo {
+        float: left;
+        display: block;
+    }
+
+    .header-nav.responsive {position: relative;}
+
+    .header-nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+      
+    .header-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-nav.responsive a#logo {
+        display: none;
+    }
+    
+}
+
+/* Styling for tablets */
+
+@media screen and (max-device-width: 1200px) and (min-device-width: 601px) { 
+
+    
+}
+
+/* Styling for everything with a bigger screen than a mobile */
+
+@media only screen and (min-device-width: 780px){
+    
+}
+
+/* Styling for mobile */
+
+@media only screen and (max-device-width: 779px){
+    .header-nav #logo {
+        padding: 0 10px;
+    }
+
+    .header-nav #logo img {
+        width: 65px;
+    }
+}

@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    /*border: 1px solid red;*/
+}
+
+html, body {
+	height: 100% !important;
+}
+
+.wrapper {
+	background: #230b0b;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	min-height: 100%; 
+}
+
+.mid-img {
+	padding: 0;
+	height: 600px;
+	background: url(../Bilder/pattern.jpg); /*#1c0808*/
+}
+
+.mid-img img {
+	margin: auto;
+	height: 100%;
+}
+
+.main-content {
+	padding: 50px 50px 150px 50px;
+	position: relative;
+}
+
+.main-content h1 {
+	color: #f2f2f2;
+	font-size: 100px;
+	font-family: Verdana;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.main-content p {
+	font-size: 20px;
+	color: #D6CFCF;
+	padding: 0 150px;
+}
+
+.showing, .facebook-feed{
+	text-align: center;
+	padding: 20px;
+    min-height: 650px;
+}
+
+.showing p {
+	padding: 0;
+    margin: 0;
+}
+
+.showing h2 {
+    position: relative;
+    display: block;
+	color: #f2f2f2;
+	font-size: 75px;
+    line-height: 150px;
+	margin: auto;
+    
+}
+
+.showing .showing-img {
+	height: auto;
+	display: table;
+	overflow: auto;
+}
+
+.showing .showing-img img {
+	height: auto;
+	display: table-row;
+}
+
+
+.showing .showing-buttons {
+	position: absolute;
+    display: block;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+	height: auto;
+	width: 70%;
+}
+
+.showing .showing-buttons a {
+	margin-left: 0;
+	width: 45%;
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: rgba(130,49,47,0.35);
+	border: none;
+	border-radius: 0px;
+	box-sizing: border-box;
+	transition: all .2s	ease-in-out;
+	text-align: center;
+}
+
+.showing .showing-buttons a:last-child {
+	margin-left: 5%;
+}
+
+.showing .showing-buttons a p {
+	opacity: 100%;
+	color: white;
+	font-size: 20px;
+	font-family: Arial;
+	margin: auto;
+	text-align: center;
+	padding: 0;
+}
+
+.showing .showing-buttons a:before {
+	position: absolute;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	content: "";
+	display: block;
+	background-color: #4e1d1c;
+	z-index: -1;
+	transition: all .2s ease-in-out;
+}
+
+
+.showing .showing-buttons a:hover {
+	transform: scale(1);
+}
+
+.showing .showing-buttons a:hover:before {
+	bottom: 0;
+}
+
+.showing div, .facebook-feed div {
+	width: 100%;
+	height: 150px;
+}
+
+.facebook-feed div img {
+	width: 70%;
+	height: 100%;
+    margin: auto;
+}
+
+.facebook-feed .facebook-feed-container {
+	height: 500px;
+    text-align: center;
+}
+
+.facebook-feed iframe {
+    display: block;
+    margin: auto;
+    padding: 0;
+    width: 500px;
+}
+
+
+
+
+/* Styling for mobile */
+
+@media only screen and (max-device-width: 600px){
+    
+    .main-content h1 {font-size: 25px !important;}
+    
+    .main-content h2 {font-size: 20px !important;}
+    
+    .main-content p {font-size: 13px !important;}
+    
+
+    .mid-img {display: none;   }
+    
+    .main-content {padding: 20px 0px;}
+    
+    .main-content h1 {font-size: 25px;}
+    
+	.main-content p {padding: 0 2px;}
+
+	.facebook-feed {
+		display: none;
+	}
+    
+
+	.showing {margin: auto;}
+
+	.showing .showing-buttons a p {
+		font-size: 10px;
+	}
+
+	#bottom {
+		padding: 0;
+	}
+    
+
+}
+
+/* Styling for tablets and mobiles */
+
+@media screen and (max-device-width: 1200px) and (min-device-width: 601px) { 
+
+	.main-content h2 {font-size: 55px !important;}
+	.main-content p {padding: 0px 0px;}
+
+	.facebook-feed {
+		display: none;
+	}
+
+    
+}
+
+@media screen and (min-device-width: 1000px) and (max-device-width: 1200px){
+	.facebook-feed .facebook-feed-container {
+		width: 400px;
+	}
+}
+
+
+/* Styling for mobiles*/
+
+@media only screen and (max-device-width: 780px){
+    .main-content .showing {
+        min-height: 500px;
+    }
+}
+
